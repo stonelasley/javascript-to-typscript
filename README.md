@@ -3,11 +3,13 @@
 Utility to help migrate javascript apps to typescript.
 
 ###Install
+
 ```sh
 $ npm install javascript-to-typescript
 ```
 
 ###Usage
+
   * from root of project
 ```sh
 $ js-to-ts [OPTION] [PATH]
@@ -22,6 +24,7 @@ $ js-to-ts [OPTION] [PATH]
      - Typings
 
 #####Default options
+
 ```sh
 $ js-to-ts 
 ```
@@ -36,7 +39,7 @@ $ js-to-ts
                     <code>
  src/
 ├── file1.js
-├── files2.js
+├── file2.js
 └── module/
     └── views/
         └── view1.html
@@ -49,8 +52,8 @@ $ js-to-ts
                 <pre>
                     <code>
  src/
-├── files1.ts
-├── files2.ts
+├── file1.ts
+├── file2.ts
 └── module
     └── views/
         └── view1.html
@@ -66,6 +69,7 @@ $ js-to-ts
 </table>
 
 #####Specific Directory
+
 ```sh
 $ js-to-ts --startPath ./src
 ```
@@ -78,7 +82,7 @@ $ js-to-ts --startPath ./src
             <td><pre><code>.
  src/
 ├── file1.js
-├── files2.js
+├── file2.js
 └── module/
     └── views/
         └── view1.html
@@ -91,7 +95,7 @@ $ js-to-ts --startPath ./src
 <td><pre><code>.
  src/
 ├── files1.ts
-├── files2.ts
+├── file2.ts
 └── module
     └── views/
         └── view1.html
@@ -108,6 +112,7 @@ $ js-to-ts --startPath ./src
 </table>    
 
 #####Additional Filter
+
 ```sh
 $ js-to-ts --filter '**/file1.js'
 ```
@@ -122,7 +127,7 @@ $ js-to-ts --filter '**/file1.js'
                 <code>
  src/
 ├── file1.js
-├── files2.js
+├── file2.js
 └── module/
     └── views/
         └── view1.html
@@ -135,13 +140,13 @@ $ js-to-ts --filter '**/file1.js'
             <pre>
                 <code>
  src/
-├── files1.ts
-├── files2.js
+├── file1.ts
+├── file2.js
 └── module
     └── views/
         └── view1.html
     ├── file1.ts
-    └── file2.t=js
+    └── file2.js
 ├── tsconfig.json
 └── typings.json
                 </code>
@@ -150,7 +155,9 @@ $ js-to-ts --filter '**/file1.js'
     </tr>
 </tbody>
 </table>
+
 #####Dry Run
+
 ```sh
 $ js-to-ts -p ./src --dryRun
 $ Files to Migrate: [
