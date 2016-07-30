@@ -1,10 +1,18 @@
 {
   "name": "javascript-to-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Migrate projects to typescript quickly",
   "directories": {
     "test": "spec"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stonelasley/javascript-to-typscript"
+  },
+  "bugs": {
+    "url": "https://github.com/stonelasley/javascript-to-typscript/issues"
+  },
+  "homepage": "https://github.com/stonelasley/javascript-to-typscript/main-bower-files",
   "dependencies": {
     "command-line-args": "^3.0.0",
     "jasmine-node": "^2.0.0-beta4",
@@ -12,6 +20,12 @@
     "shelljs": "^0.7.3",
     "walk-sync": "^0.3.0"
   },
+  "keywords": [
+    "typescript",
+    "migration",
+    "typings",
+    "tsc"
+  ],
   "devDependencies": {
     "jasmine-node": "2.0.0-beta4"
   },
