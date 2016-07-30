@@ -8,10 +8,15 @@ $ npm install javascript-to-typescript
 ```
 
 ###Usage
+  * from root of project
+```sh
+$ js-to-ts [OPTION] [PATH]
+```
+  -p --startPath : starting path
+  -f --filter : filter pattern
+  -d --dryRun : dry run
+
  - All commands should be run from the root of your project
- ```sh
- $ cd <root of js project>
- ```
  - Running any of these commands will also install the following NPM packages
      - Typescript
      - Typings
@@ -33,6 +38,8 @@ $ js-to-ts
 ├── file1.js
 ├── files2.js
 └── module/
+    └── views/
+        └── view1.html
     ├── file1.js
     └── file2.js
                     </code>
@@ -45,6 +52,8 @@ $ js-to-ts
 ├── files1.ts
 ├── files2.ts
 └── module
+    └── views/
+        └── view1.html
     ├── file1.ts
     └── file2.ts
 ├── tsconfig.json
@@ -71,6 +80,8 @@ $ js-to-ts --startPath ./src
 ├── file1.js
 ├── files2.js
 └── module/
+    └── views/
+        └── view1.html
     ├── file1.js
     └── file2.js
 └── utilities/
@@ -82,6 +93,8 @@ $ js-to-ts --startPath ./src
 ├── files1.ts
 ├── files2.ts
 └── module
+    └── views/
+        └── view1.html
     ├── file1.ts
     └── file2.ts
 └── utilities/
@@ -111,6 +124,8 @@ $ js-to-ts --filter '**/file1.js'
 ├── file1.js
 ├── files2.js
 └── module/
+    └── views/
+        └── view1.html
     ├── file1.js
     └── file2.js
                 </code>
@@ -123,6 +138,8 @@ $ js-to-ts --filter '**/file1.js'
 ├── files1.ts
 ├── files2.js
 └── module
+    └── views/
+        └── view1.html
     ├── file1.ts
     └── file2.t=js
 ├── tsconfig.json
@@ -136,39 +153,11 @@ $ js-to-ts --filter '**/file1.js'
 #####Dry Run
 ```sh
 $ js-to-ts -p ./src --dryRun
-$ 
+$ Files to Migrate: [
+    'src/file1.js',
+    'src/file2.js',
+    'module/file1.js',
+    'module/file2.js'
+] 
 ```
-<table>
-    <thead>
-        <tr><th>Before</th><th>After</th></tr>
-    </thead>
-<tbody>
-    <tr>
-        <td>
-            <pre>
-                <code>
- src/
-├── file1.js
-├── files2.js
-└── module/
-    ├── file1.js
-    └── file2.js
-                </code>
-            </pre>
-        </td>
-        <td>
-            <pre>
-                <code>
- src/
-├── files1.js
-├── files2.js
-└── module
-    ├── file1.js
-    └── file2.js
-                </code>
-            </pre>
-        </td>
-    </tr>
-</tbody>
-</table>
 
