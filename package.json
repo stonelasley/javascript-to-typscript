@@ -1,0 +1,27 @@
+{
+  "name": "@stonelasley/js-to-ts",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "spec"
+  },
+  "dependencies": {
+    "command-line-args": "^3.0.0",
+    "jasmine-node": "^2.0.0-beta4",
+    "multimatch": "^2.1.0",
+    "shelljs": "^0.7.3",
+    "walk-sync": "^0.3.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "2.0.0-beta4"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "author": "Stone C. Lasley",
+  "license": "MIT",
+  "main": "lib/js-to-ts.js",
+  "bin": {
+    "js-to-ts": "bin/cli.js"
+  }
+}
