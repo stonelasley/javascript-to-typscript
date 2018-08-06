@@ -1,4 +1,4 @@
-###DEPRECATED
+# DO NOT USE
 This should no longer be used, you can now easily include js files with the [allowJs](https://www.typescriptlang.org/docs/handbook/compiler-options.html) setting in your tsconfig 
 
 
@@ -8,13 +8,13 @@ This should no longer be used, you can now easily include js files with the [all
 ##javascript-to-typscript
 Utility to help migrate javascript apps to typescript.
 
-###Install
+### Install
 
 ```sh
 $ npm install javascript-to-typescript
 ```
 
-###Usage
+### Usage
 
   * from root of project
 ```sh
@@ -29,7 +29,7 @@ $ js-to-ts [OPTION] [PATH]
      - Typescript
      - Typings
 
-#####Default options
+##### Default options
 
 ```sh
 $ js-to-ts 
@@ -162,7 +162,7 @@ $ js-to-ts --filter '**/file1.js'
 </tbody>
 </table>
 
-#####Dry Run
+##### Dry Run
 
 ```sh
 $ js-to-ts -p ./src --dryRun
