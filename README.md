@@ -1,3 +1,9 @@
+###DEPRECATED
+This should no longer be used, you can now easily include js files with the [allowJs](https://www.typescriptlang.org/docs/handbook/compiler-options.html) setting in your tsconfig 
+
+
+
+
 [![Build Status](https://travis-ci.org/stonelasley/javascript-to-typscript.svg?branch=master)](https://travis-ci.org/stonelasley/javascript-to-typscript)  [![Dependency Status](https://david-dm.org/stonelasley/javascript-to-typescript.svg)](https://david-dm.org/stonelasley/javascript-to-typescript)
 ##javascript-to-typscript
 Utility to help migrate javascript apps to typescript.
